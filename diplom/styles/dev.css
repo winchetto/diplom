@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(/picters/backkk.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.profile-card{
+  display:inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 400px;
+  text-align: center;
+  border-radius: 9px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 13px 30px -6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 13px 30px -6px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 13px 30px -6px rgba(0, 0, 0, 0.2);
+}
+
+.card-header{
+  background: #111112;
+  padding: 60px 40px;
+  opacity: 0.98;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #d24ede, #338287);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 3s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic IMG{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+.name{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #338287;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: white;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+  text-decoration: none;
+}
+
+.sm a:hover{
+  color: #d24ede;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #d24ede;
+  border: 2px solid #d24ede;
+  border-radius: 5px;
+  margin-top: 16px;
+  transition: .3s linear;
+  text-decoration: none;
+}
+
+.contact-btn:hover{
+  background: #d24ede;
+  color: #111112;
+}
+
+.card-footer{
+  padding: 60px 10px;
+  background: #2dbda2;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #111112;
+}
+
+.item span{
+  display: block;
+  font-size: 28px;
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #111112;
+}
+
+.inline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
